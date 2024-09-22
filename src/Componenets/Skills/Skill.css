@@ -1,0 +1,31 @@
+.skill{
+    box-shadow: 0px 0px 15px #27272a;
+ 
+    padding: 40px 0px;
+    border-radius: 30px;
+}
+.skill h4{
+    padding-top: 20px;
+}
+.logos{
+    font-size: 30px;
+    color: #fe0000; ;
+}
+.skill:hover{
+    border: 1px solid #fe0000;
+    transition:  .4s ease;
+}
+.skill:hover h4{
+    color: white;
+}
+/* .react{
+    animation: anim 10s linear infinite;
+} */
+@keyframes anim{
+    0%{
+     transform: rotate(0deg);   
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

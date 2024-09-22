@@ -1,0 +1,46 @@
+
+.icons{
+    position: absolute;
+    left: 20px;
+    top: 53%;
+    cursor: pointer;
+    list-style: 1.2;
+    font-size: 18px;
+    animation: fromTop 5s ease;
+    color: white;
+    flex-direction: column;
+   
+    
+}
+.icons p:hover{
+   color:  #fe0000;;
+
+}
+@media(max-width:768px){
+    .icons{
+            flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        position: unset;
+        margin-top: 30px;
+         font-size: 26px;
+    }
+}
+@media(min-width:768px){
+    .icons{
+        right: 40px;
+        left: unset;
+        flex-direction: column;
+    }
+}
+
+
+@keyframes fromTop{
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+       
+        transform: translateY(0px);
+    }
+}

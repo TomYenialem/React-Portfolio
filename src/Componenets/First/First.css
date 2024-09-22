@@ -1,0 +1,27 @@
+.animate-texts {
+  overflow: hidden;
+  height: 100px;
+  text-align: center;
+  color: white;
+}
+
+.txt {
+ 
+
+  animation: textChange 4s infinite;
+}
+
+@keyframes textChange {
+ 0% {
+    opacity: 1;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50px);
+  }
+}

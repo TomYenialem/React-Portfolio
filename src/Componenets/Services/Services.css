@@ -1,0 +1,41 @@
+.box{
+    padding: 0px 40px;
+    box-shadow: 0px 0px 10px #1e293b;
+    background-color: #0a0a0a;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    line-height: 2;
+    border-radius: 10px;
+      border-bottom: 3px solid #fe0000;
+   
+}
+.box:hover{
+    border-bottom: 3px solid #fe0000;
+    transition: all .4s ease;
+    transform: scale(1.04);
+}
+
+.box .text-start{
+    color: #fe0000;
+    font-size: 30px;
+}
+.serv{
+    margin-top: 100px;
+  
+}
+.serices{
+      background-color: #262626;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Make all boxes the same height */
+  padding: 0px 40px;
+  box-shadow: 0px 0px 10px #1e293b;
+  background-color: #0a0a0a;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  line-height: 2;
+  border-radius: 10px;
+}

@@ -1,0 +1,130 @@
+.modals {
+  background-color: #18181b;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+  position: relative;
+  
+  
+}
+
+
+.overlay-modal {
+  position: fixed;
+  z-index: 9999;
+  top: 2%;
+  left: 5%;
+  animation: modal-anim 0.5s ease;
+  background-color: rgba( 0,0,0,0.5); 
+
+}
+
+.modal-opens {
+  overflow: hidden;
+}
+
+.modal-1 {
+  overflow-y: scroll;
+  height: 100vh;
+  z-index: 2000;
+}
+.modal-1::-webkit-scrollbar {
+  display: none;
+}
+.modal-container::-webkit-scrollbar {
+  width: 4px;
+  background-color: #18181b;
+}
+
+.modal-container::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 40px;
+}
+
+.modal-container::-webkit-scrollbar-track {
+  background-color: #18181b;
+  border-radius: 3px;
+}
+.mode-image img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  border: 1px solid #fe0000;
+}
+.details span {
+  color: #fe0000;
+  margin-right: 10px;
+}
+.details p {
+  border-bottom: 2px dotted #1e293b;
+  padding-bottom: 5px;
+}
+.left-modal {
+  border-right: 2px dotted #1e293b;
+}
+.right-modal h5 {
+  border-bottom: 2px dotted #1e293b;
+  padding-bottom: 10px;
+}
+.right-modal p {
+  padding-bottom: 5px;
+}
+
+.progres {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #fe0000;
+  border-top-color: white;
+}
+.circle {
+  border: 2px solid #fe0000;
+}
+.educat {
+  border-left: 2px dotted #fe0000;
+}
+.educat P {
+  box-shadow: 0px 0px 10px #1e293b;
+  padding: 5px 20px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+.educat .d-flex {
+  padding-bottom: 35px;
+}
+.close {
+  float: right;
+  position: fixed;
+  right: 2%;
+  top: 2%;
+  padding: 2px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  font-style: 25px;
+}
+.close:hover {
+  color: #fe0000;
+}
+@keyframes modal-anim {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-container {
+    height: 90vh;
+    z-index: 1000;
+    position: relative;
+    overflow-y: scroll;
+  }
+  .modal-1 {
+    overflow-y: none;
+  }
+  .modal-1 {
+    overflow-y: none;
+    height: auto;
+  }
+}

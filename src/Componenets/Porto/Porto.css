@@ -1,0 +1,112 @@
+.portofolio-page {
+  background-color: #131212;
+}
+.porto .d-flex {
+  gap: 40px;
+  margin: 20px;
+  cursor: pointer;
+  padding-bottom: 25px;
+  animation: slideDown 0.3s ease-in-out forwards;
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Initially hidden slightly above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Slide down to visible position */
+  }
+}
+
+.active {
+  box-shadow: 0px 0px 10px black;
+  padding: 5px 30px;
+  border-radius: 30px;
+  color: white;
+  background-color: #404040;
+  animation: buttonHighlightt 0.8s ease-in-out forwards;
+}
+@keyframes buttonHighlightt {
+  from {
+    background-color: #404040; /* Match inactive button color */
+  }
+  to {
+    background-color: #212121; /* Highlight color for active button */
+  }
+}
+.recent {
+  border-bottom: 4px solid #fe0000;
+
+  width: 100px;
+}
+.portofoilio {
+  position: relative;
+}
+
+.project-name-overlay {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  width: 99%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+
+  transition: all 0.3s ease-in-out;
+
+
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .project-name-overlay {
+    left: 0;
+    top: 0;
+  }
+}
+.portofoilio img {
+  box-shadow: 0px 0px 10px #404040;
+  border-radius: 5px;
+}
+
+.portofoilio.hovered .project-name-overlay {
+  opacity: 1;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+}
+
+
+.project-list .d-flex {
+  flex-wrap: wrap;
+}
+.link-icons{
+
+box-shadow: 0px 0px 30px #212121;
+width: 45px;
+height: 45px;
+border-radius: 50%;
+text-align: center;
+  background-color: white;
+
+}
+.link-icons:hover{
+
+  background-color: black;
+}
+.link-icons a{
+  color: black;
+
+}
+.link-icons a:hover{
+
+  color:white;
+}
+.link-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    flex-direction: column;
+      gap: 50px;
+      padding-top: 40px;
+}

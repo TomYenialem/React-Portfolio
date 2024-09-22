@@ -1,0 +1,27 @@
+.para{
+    line-height: 1.7;
+}
+.headers{
+    line-height: 1.6;
+}
+.bt{
+    background-color:#fe0000; 
+
+    
+}
+.bt:hover{
+    font-style: italic;
+}
+.aboutt {
+    background-color:#18181b
+}
+ .image-anim {
+    border-right: 2px solid #18181b ;
+ }
+ .image-anim img{
+    border-radius: 10%;
+ }
+ .aboutt{
+    
+    position: relative;
+ }

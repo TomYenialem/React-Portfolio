@@ -1,4 +1,4 @@
-import React, { useContext} from "react";
+import React, { useContext, useState} from "react";
 import "./Header.css";
 import { RiMenu3Fill } from "react-icons/ri";
 import img from "../../assets/images/tom-sm.jpg";
@@ -7,69 +7,72 @@ import Icons from "./Icons/Icons";
 import logo from "../../assets/images/logo.jpg";
 import { useMyContext } from "../Contexts/Context";
 import { FaArrowAltCircleUp } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 
 
 export default function Header() {
   const{day,handleToggle}=useMyContext()
-  
+  const[show,setShow]=useState(true)
   return (
-    <div className="header  " id="Home">
-      <nav className="navbar navbar-expand-md text-white  p-0  ">
-        <div className="container ">
-          <div className="">
-            <a className="navbar-brand text-white" href="#">
-              <img src={logo} alt="" style={{ width: "130px" }} />
-            </a>
-          </div>
+    <div className="header" id="Home">
+      <div className="header_wrapper fixed-top">
+        <nav className="navbar navbar-expand-md text-white  p-0  ">
+          <div className="container ">
+            <div className="">
+              <a className="navbar-brand text-white" href="#">
+                <img src={logo} alt="" style={{ width: "100px" }} />
+              </a>
+            </div>
 
-          <div
-            className="navbar-toggler p-0 "
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbar"
-          >
-            <span className="menu">
-              <RiMenu3Fill className="text-white fw-bold fs-1 " />
-            </span>
-          </div>
-          <div className="collapse navbar-collapse   " id="collapsibleNavbar">
-            <ul className="navbar-nav m-auto  w-100 d-flex justify-content-end  m-auto">
-              <li className="nav-item">
-                <a
-                  className="nav-link text-danger text-hover-danger px-4"
-                  href="#Home"
-                >
-                  Home
-                </a>
-              </li>
-              <div className="border-btm"></div>
-              <li className="nav-item">
-                <a className="nav-link px-4" href="#About">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link  px-4" href="#Porto">
-                  Portfolio
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link  px-4" href="#Skill">
-                  skills
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link  px-4" href="#Contact">
-                  Contacts
-                </a>
-              </li>
-              {/* <div onClick={handleToggle}>
+            <div
+              className="navbar-toggler p-0 "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+            >
+              <span className="menu" onClick={()=>setShow(prev=>!prev)}>
+               {show? <RiMenu3Fill className="text-white fw-bold fs-1 " />:<IoMdClose  className="text-white fw-bold fs-1"/>}
+              </span>
+            </div>
+            <div className="collapse navbar-collapse bg-dark   " id="collapsibleNavbar">
+              <ul className="navbar-nav m-auto  w-100 d-flex justify-content-end  m-auto">
+                <li className="nav-item">
+                  <a
+                    className="nav-link text-danger text-hover-danger px-4 mb-2"
+                    href="#Home"
+                  >
+                    Home
+                  </a>
+                </li>
+                <div className="border-btm"></div>
+                <li className="nav-item">
+                  <a className="nav-link px-4" href="#About">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link  px-4" href="#Porto">
+                    Portfolio
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link  px-4" href="#Skill">
+                    skills
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link  px-4" href="#Contact">
+                    Contacts
+                  </a>
+                </li>
+                {/* <div onClick={handleToggle}>
                 {day ? <FaToggleOn /> : <FaToggleOff />}
               </div> */}
-            </ul>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
       <div className="profile">
         <img src={img} alt="" className="tom-sm" />
@@ -78,12 +81,20 @@ export default function Header() {
         <h1>
           TEMESGEN <span>YENIALME</span>
         </h1>
-        <div className=" ">
-          <First />
+        <div className="animate_intro">
+          <span>Hello I'm</span>
+          <p>
+            <First />
+          </p>
         </div>
-        <a href="#Contact">
-          <button className="btn px-4 py-2">Contact Me</button>
-        </a>
+        <div className="cv">
+          <a href="#Contact">
+            <button className="btn ">Contact Me</button>
+          </a>
+          <a href="#Contact">
+            <button className="btn resume">Download cv</button>
+          </a>
+        </div>
       </div>
       <div>
         <Icons />

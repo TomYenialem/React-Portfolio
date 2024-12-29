@@ -63,15 +63,24 @@ export default function Modal() {
                   About <span className="text-color"> Me</span>
                 </h5>
                 <p className="mb-5 text-secondary">
-                  As a budding front-end developer, I'm driven by a passion for
-                  crafting intuitive and visually appealing user interfaces. My
-                  journey in web development has equipped me with a solid
-                  understanding of HTML, CSS, and JavaScript, enabling me to
-                  build interactive and responsive web applications. I'm
-                  constantly seeking to expand my knowledge and explore the
-                  latest trends in front-end development. I believe in the power
-                  of collaboration and am excited to contribute to innovative
-                  projects.
+                  From a young age, I've been fascinated by how things work,
+                  particularly the invisible code that makes the digital world
+                  come alive. <br />
+                  This curiosity led me to the world of web development, where I
+                  discovered a passion for building engaging and user-friendly
+                  experiences. As a full-stack web developer, I'm driven by a
+                  desire to create seamless and impactful digital solutions. My
+                  journey has equipped me with a solid understanding of
+                  front-end technologies like HTML, CSS, and JavaScript,
+                  enabling me to craft intuitive and visually appealing user
+                  interfaces.
+                  <br /> I'm equally comfortable working with back-end
+                  technologies, allowing me to build robust and scalable
+                  applications. I'm a passionate and results-oriented individual
+                  who is always eager to learn and stay updated with the latest
+                  industry trends. I believe in the power of collaboration and
+                  am excited to contribute my skills to innovative projects that
+                  make a real difference."
                 </p>
                 <div className="quality">
                   <h5>
@@ -81,28 +90,39 @@ export default function Modal() {
                     <span className="text-color">
                       <GoTriangleRight />
                     </span>
-                    Website Development
+                    Custom Website Development
                   </p>
                   <p className="text-secondary">
                     <span className="text-color">
                       <GoTriangleRight />
                     </span>
-                    Web Design
-                  </p>
-
-                  <p className="text-secondary">
-                    <span className="text-color">
-                      <GoTriangleRight />
-                    </span>
-                    UX UI design
+                    Web Application Development
                   </p>
                   <p className="text-secondary">
                     <span className="text-color">
                       <GoTriangleRight />
                     </span>
-                    Full Stack Development
+                    E-commerce Solutions
+                  </p>
+                  <p className="text-secondary">
+                    <span className="text-color">
+                      <GoTriangleRight />
+                    </span>
+                    API Development & Integration
                   </p>
                 </div>
+                <p className="text-secondary">
+                  <span className="text-color">
+                    <GoTriangleRight />
+                  </span>
+                  Database Design & Management (SQL, NoSQL)
+                </p>
+                <p className="text-secondary">
+                  <span className="text-color">
+                    <GoTriangleRight />
+                  </span>
+                  UI/UX Design & Prototyping
+                </p>
                 <div className="programming-skill">
                   <h5 className="mb-4">
                     Programming<span className="text-color">Skills</span>
@@ -121,7 +141,7 @@ export default function Modal() {
                     </div>
                   </div>
                   <div className="d-flex justify-content-between text-secondary">
-                    <p>CSS</p>
+                    <p>CSS (including Bootstrap, Material UI,taliwind)</p>
                     <div>90%</div>
                   </div>
 
@@ -132,7 +152,7 @@ export default function Modal() {
                     ></div>
                   </div>
                   <div className="d-flex justify-content-between text-secondary">
-                    <p>JAVASCRIPT</p>
+                    <p>JavaScript (including React.js)</p>
                     <div>90%</div>
                   </div>
 
@@ -143,7 +163,7 @@ export default function Modal() {
                     ></div>
                   </div>
                   <div className="d-flex justify-content-between text-secondary">
-                    <p>React</p>
+                    <p>Node.js (with Express.js)</p>
                     <div>90%</div>
                   </div>
 
@@ -154,10 +174,10 @@ export default function Modal() {
                     ></div>
                   </div>
                   <div className="d-flex justify-content-between text-secondary">
-                    <p>NodeJs</p>
+                    <p>SQL (MySQL, PostgreSQL)</p>
                     <div>85%</div>
                   </div>
-
+                  
                   <div class="progress" style={{ height: "3px" }}>
                     <div
                       class="progress-bar bg-danger fs-5"

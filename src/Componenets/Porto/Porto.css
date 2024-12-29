@@ -106,7 +106,23 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-    flex-direction: column;
-      gap: 50px;
-      padding-top: 40px;
+   flex-direction: column;
+      gap: 20px;
+      padding-top: 10px;
+}
+.stacks{
+  display: flex;
+  color: white;
+  gap: 10px;
+}
+.stacks img{
+ 
+  color: white;
+ 
+  border-radius: 50%;
+  padding: 5px;
+  
+}
+.stack-images{
+  width: 45px;
 }

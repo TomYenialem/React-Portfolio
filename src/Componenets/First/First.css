@@ -1,27 +1,38 @@
 .animate-texts {
-  overflow: hidden;
-  height: 100px;
+  /* overflow: hidden;
   text-align: center;
   color: white;
+  font-size: 1.5em;
+  font-family: "Courier New", Courier, monospace;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  width: fit-content;
+  margin: 20px auto;
+  animation: blink 0.7s infinite; */
 }
 
-.txt {
- 
 
-  animation: textChange 4s infinite;
-}
 
-@keyframes textChange {
- 0% {
-    opacity: 1;
-    transform: translateY(-50px);
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
   }
   50% {
-    opacity: 1;
-    transform: translateY(10px);
+    border-color: white;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(-50px);
-  }
+}
+.typewriter {
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  border-right: 2px solid white;
+  animation: blink 0.7s infinite;
+  height: 5vh;
+}
+
+
+.highlight{
+  color: #fe0000;
 }

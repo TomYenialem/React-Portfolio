@@ -35,12 +35,12 @@ export default function About() {
                 developer and Web Designer
               </h1>
               <p className="text-secondary mt-4 para">
-                I'm a passionate front-end developer eager to create engaging
-                and user-friendly web experiences. With a strong foundation in
-                HTML, CSS, and JavaScript, I'm constantly exploring new
-                technologies and best practices to enhance my skillset. I'm
-                excited about the opportunity to contribute to dynamic projects
-                and learn from experienced developers.
+                I'm a full-stack developer with a strong foundation in both
+                front-end and back-end technologies. I thrive on challenges,
+                constantly learning and exploring new ways to push the
+                boundaries of what's possible. I believe in the power of
+                technology to connect people and create positive change, and I'm
+                excited to contribute my skills to meaningful projects.
               </p>
               <hr className="text-secondary mt-4" />
               <div className="row">

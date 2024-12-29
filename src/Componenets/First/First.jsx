@@ -1,23 +1,50 @@
 import React, { useState, useEffect } from "react";
-import './First.css'
-
+import "./First.css";
 
 function First() {
-  const texts = ["FrontEnd Developer", "UX/UI designer", "Web designer"];
+  const texts = [
+    "Fullstack Developer",
+    "Frontend Specialist",
+    "Backend Expert",
+    "Database Architect",
+    "MERNStack Developer",
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 3000);
+    const currentWord = texts[currentIndex];
+    const typingSpeed = isDeleting ? 90 : 100;
 
-    return () => clearInterval(interval);
-  }, []);
+    const handleTyping = () => {
+      if (!isDeleting && displayedText === currentWord) {
+        setTimeout(() => setIsDeleting(true), 1000); // Pause before deleting
+      } else if (isDeleting && displayedText === "") {
+        setIsDeleting(false);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+      } else {
+        const nextText = isDeleting
+          ? currentWord.substring(0, displayedText.length - 1)
+          : currentWord.substring(0, displayedText.length + 1);
+        setDisplayedText(nextText);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [displayedText, isDeleting, texts, currentIndex]);
+
+  // Split the displayed text into words
+  const words = displayedText.split(" ");
+  const firstWord = words[0] || "";
+  const nextWord = words[1] || "";
 
   return (
-    <div className="animate-texts">
-      <h3 className="txt">{texts[currentIndex]}</h3>
-    </div>
+    <span className="typewriter">
+      <span>{firstWord}</span>
+      {nextWord && <span className="highlight"> {nextWord}</span>}
+    </span>
   );
 }
 

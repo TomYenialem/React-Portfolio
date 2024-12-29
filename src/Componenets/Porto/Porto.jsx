@@ -7,6 +7,8 @@ export default function Porto() {
   const [filters, setFilter] = useState(project);
   const [activeFilter, setActiveFilter] = useState("all");
   const [isHovered, setIsHovered] = useState(Array(filters.length).fill(false));
+ let x=project.forEach((pro) => console.log(pro.made.one))
+ 
 
   const handleFilterChange = (filterName) => {
     setFilter(
@@ -97,6 +99,11 @@ export default function Porto() {
                           <BiLink />
                         </a>
                       </p>
+                      </div>
+                      <div className="stacks">
+                      {Object.values(project.made).map((icons)=>(
+                        <img src={icons} alt=""  className="stack-images"/>
+                      ))}
                     </div>
                   </div>
                 </div>

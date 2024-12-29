@@ -6,13 +6,13 @@
     cursor: pointer;
     list-style: 1.2;
     font-size: 18px;
-    animation: fromTop 5s ease;
+    animation: fromTop 3s ease;
     color: white;
     flex-direction: column;
    
     
 }
-.icons p:hover{
+.icons p a:hover{
    color:  #fe0000;;
 
 }

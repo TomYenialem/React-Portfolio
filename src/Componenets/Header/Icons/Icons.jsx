@@ -21,8 +21,9 @@ export default function Icons() {
         </a>
       </p>
       <p>
-        <a href="https://github.com/TomYenialem">
+        <a href="https://github.com/TomYenialem" target='_blank'>
           <FaGithub />
+
         </a>
       </p>
       <p>

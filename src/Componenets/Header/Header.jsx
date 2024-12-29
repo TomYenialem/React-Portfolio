@@ -1,4 +1,4 @@
-import React, { useContext, useState} from "react";
+import React, { useContext, useState } from "react";
 import "./Header.css";
 import { RiMenu3Fill } from "react-icons/ri";
 import img from "../../assets/images/tom-sm.jpg";
@@ -9,10 +9,9 @@ import { useMyContext } from "../Contexts/Context";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
-
 export default function Header() {
-  const{day,handleToggle}=useMyContext()
-  const[show,setShow]=useState(true)
+  const { day, handleToggle } = useMyContext();
+  const [show, setShow] = useState(true);
   return (
     <div className="header" id="Home">
       <div className="header_wrapper fixed-top">
@@ -20,7 +19,7 @@ export default function Header() {
           <div className="container ">
             <div className="">
               <a className="navbar-brand text-white" href="#">
-                <img src={logo} alt="" style={{ width: "100px" }} />
+                <img src={logo} className="logo"/>
               </a>
             </div>
 
@@ -30,11 +29,18 @@ export default function Header() {
               data-bs-toggle="collapse"
               data-bs-target="#collapsibleNavbar"
             >
-              <span className="menu" onClick={()=>setShow(prev=>!prev)}>
-               {show? <RiMenu3Fill className="text-white fw-bold fs-1 " />:<IoMdClose  className="text-white fw-bold fs-1"/>}
+              <span className="menu" onClick={() => setShow((prev) => !prev)}>
+                {show ? (
+                  <RiMenu3Fill className="text-white fw-bold fs-1 " />
+                ) : (
+                  <IoMdClose className="text-white fw-bold fs-1" />
+                )}
               </span>
             </div>
-            <div className="collapse navbar-collapse bg-dark   " id="collapsibleNavbar">
+            <div
+              className="collapse navbar-collapse top  "
+              id="collapsibleNavbar"
+            >
               <ul className="navbar-nav m-auto  w-100 d-flex justify-content-end  m-auto">
                 <li className="nav-item">
                   <a

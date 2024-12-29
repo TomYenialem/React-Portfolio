@@ -1,31 +1,63 @@
-.skill{
-    box-shadow: 0px 0px 15px #27272a;
- 
-    padding: 40px 0px;
-    border-radius: 30px;
+.skill {
+  box-shadow: 0px 10px 15px #39393a;
+  padding: 40px 0px;
+  border-radius: 30px;
 }
-.skill h4{
-    padding-top: 20px;
+
+.skill h4 {
+  padding-top: 20px;
+  color: white;
 }
-.logos{
-    font-size: 30px;
-    color: #fe0000; ;
+
+.logos {
+  font-size: 30px;
+  color: #fe0000;
 }
-.skill:hover{
-    border: 1px solid #fe0000;
-    transition:  .4s ease;
+
+.skill:hover {
+  border: 1px solid #fe0000;
+  transition: 0.4s ease;
 }
-.skill:hover h4{
-    color: white;
+
+.skill:hover h4 {
+  color: white;
 }
-/* .react{
-    animation: anim 10s linear infinite;
-} */
-@keyframes anim{
-    0%{
-     transform: rotate(0deg);   
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+
+.text-container {
+  overflow: hidden;
+}
+
+.toggle-text {
+  transition: all 2s ease;
+  max-height: 200px; 
+  line-height: 1.5em; 
+}
+
+.toggle-text.collapsed {
+  max-height: 4.5em; 
+  
+}
+
+.toggle-text.expanded {
+  max-height: 1000px; 
+  
+}
+
+.toggle-text p {
+  padding: 0;
+  margin: 0;
+}
+
+
+.react {
+  animation: anim 10s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

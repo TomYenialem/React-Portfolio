@@ -74,7 +74,7 @@ export default function Porto() {
             NextJs
           </div>
         </div>
-        <div className="container mt-4">
+        <div className="container mt-4 " id="porofoili-container">
           <div className="row row-cols-1 row-cols-md-3 g-4 cc">
             {filters.map((project, index) => (
               <div
@@ -99,10 +99,10 @@ export default function Porto() {
                           <BiLink />
                         </a>
                       </p>
-                      </div>
-                      <div className="stacks">
-                      {Object.values(project.made).map((icons)=>(
-                        <img src={icons} alt=""  className="stack-images"/>
+                    </div>
+                    <div className="stacks">
+                      {Object.values(project.made).map((icons) => (
+                        <img src={icons} alt="" className="stack-images" />
                       ))}
                     </div>
                   </div>

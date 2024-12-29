@@ -24,3 +24,9 @@
     margin: 0;
    
 }
+#Contact span{
+    color: #fe0000;
+}
+.message_btn{
+    width: 130px;
+}

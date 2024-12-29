@@ -5,6 +5,11 @@ import { FaCss3 } from "react-icons/fa6";
 import { SiSimilarweb } from "react-icons/si";
 import { FaArrowsAlt } from "react-icons/fa";
 import { useMyContext } from '../Contexts/Context';
+import { FaShareNodes } from "react-icons/fa6";
+import { DiJavascript } from "react-icons/di";
+import { FaDatabase } from "react-icons/fa6";
+import { FaGear } from "react-icons/fa6";
+import { FaCloud } from "react-icons/fa";
 export default function Services() {
   
   const{  useSmoothScroll}=useMyContext()
@@ -23,29 +28,29 @@ export default function Services() {
             <div className="col-md-6 col-lg ">
               <div className="box">
                 <div className="text-start">
-                  <GrWordpress />
+                  <DiJavascript />
                 </div>
-                <div className="text-white  ">
-                  <h4> Front-End Development </h4>
+                <div className="text-white">
+                  <h4>Frontend Development</h4>
                 </div>
                 <div className="text-secondary">
-                  Build dynamic and interactive web applications using popular
-                  JavaScript frameworks.
+                  Build responsive, interactive, and modern web interfaces using
+                  technologies like React, JavaScript, HTML, and CSS.
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-lg mb-4 mt-4 mb-lg-0 mt-md-0">
               <div className="box">
                 <div className="text-start">
-                  <FaCss3 />
+                  <FaShareNodes />
                 </div>
 
                 <div className="text-white">
-                  <h4> Web Accessibility Development</h4>
+                  <h4>Backend Development</h4>
                 </div>
                 <div className="text-secondary">
-                  Ensure websites are accessible to people with disabilities by
-                  following WCAG guidelines.
+                  Develop robust server-side applications using Node.js,
+                  Express, and databases like MySQL, MongoDB, and PostgreSQL.
                 </div>
               </div>
             </div>
@@ -55,11 +60,12 @@ export default function Services() {
                   <SiSimilarweb />
                 </div>
                 <div className="text-white">
-                  <h4>PWA evelopment</h4>
+                  <h4>Full-Stack Web Development</h4>
                 </div>
                 <div className="text-secondary">
-                  Create web applications that offer native-like experiences on
-                  mobile devices.and mprove performance
+                  Build end-to-end web applications with seamless integration
+                  between frontend (React, Angular) and backend (Node.js,
+                  Express).
                 </div>
               </div>
             </div>
@@ -68,45 +74,45 @@ export default function Services() {
             <div className="col-md-6 col-lg ">
               <div className="box">
                 <div className="text-start">
-                  <GrWordpress />
+                  <FaDatabase />
                 </div>
-                <div className="text-white  ">
-                  <h4>Web Development</h4>
+                <div className="text-white">
+                  <h4>Database Management</h4>
                 </div>
                 <div className="text-secondary">
-                  Create visually appealing and user-friendly websites that
-                  adapt seamlessly to different screen sizes and devices.
+                  Design, implement, and optimize databases (MySQL, PostgreSQL,
+                  MongoDB) to ensure fast data retrieval and smooth operation.
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-lg mb-4 mt-4 mb-lg-0 mt-md-0">
               <div className="box">
                 <div className="text-start">
-                  <FaCss3 />
+                  <FaGear />
                 </div>
 
                 <div className="text-white">
-                  <h4>E-commerce Website Development</h4>
+                  <h4>API Development and Integration</h4>
                 </div>
                 <div className="text-secondary">
-                  Build robust online stores with features like product
-                  catalogs, shopping carts, secure checkout, and inventory
-                  management.
+                  Design, develop, and integrate RESTful APIs that allow for
+                  seamless communication between different applications or
+                  platforms
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-lg ">
               <div className="box">
                 <div className="text-start">
-                  <FaArrowsAlt />
+                  <FaCloud />
                 </div>
                 <div className="text-white">
-                  <h4>UI and UX Design</h4>
+                  <h4> Cloud Solutions & DevOps</h4>
                 </div>
                 <div className="text-secondary">
-                  Design intuitive and visually pleasing user interfaces.
-                  Conduct user research and usability testing to enhance user
-                  experience.
+                  Provide cloud hosting solutions (using AWS, Google Cloud,
+                  Azure) and manage the deployment process, including server
+                  configuration, scaling, and continuous integration.
                 </div>
               </div>
             </div>

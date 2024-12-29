@@ -11,11 +11,11 @@
 @keyframes slideDown {
   from {
     opacity: 0;
-    transform: translateY(10px); /* Initially hidden slightly above */
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Slide down to visible position */
+    transform: translateY(0);
   }
 }
 
@@ -55,7 +55,6 @@
 
   transition: all 0.3s ease-in-out;
 
-
   opacity: 0;
 }
 @media (max-width: 768px) {
@@ -76,53 +75,52 @@
   top: 0;
 }
 
-
 .project-list .d-flex {
   flex-wrap: wrap;
 }
-.link-icons{
-
-box-shadow: 0px 0px 30px #212121;
-width: 45px;
-height: 45px;
-border-radius: 50%;
-text-align: center;
+.link-icons {
+  box-shadow: 0px 0px 30px #212121;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
   background-color: white;
-
 }
-.link-icons:hover{
-
+.link-icons:hover {
   background-color: black;
 }
-.link-icons a{
+.link-icons a {
   color: black;
-
 }
-.link-icons a:hover{
-
-  color:white;
+.link-icons a:hover {
+  color: white;
 }
-.link-wrapper{
+.link-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-   flex-direction: column;
-      gap: 20px;
-      padding-top: 10px;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 10px;
 }
-.stacks{
+.stacks {
   display: flex;
   color: white;
   gap: 10px;
 }
-.stacks img{
- 
+.stacks img {
   color: white;
- 
+
   border-radius: 50%;
   padding: 5px;
-  
 }
-.stack-images{
+.stack-images {
   width: 45px;
+}
+#porofoili-container {
+  width: 90%;
+}
+
+#boxs {
+  box-shadow: 0px 3px 3px rgba(255, 255, 255, 0.3);
 }

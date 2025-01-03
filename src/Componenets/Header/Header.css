@@ -11,6 +11,8 @@
   z-index: 1000;
   height: 12vh;
   background-color: #18181b; 
+  
+
 }
 
 .night {
@@ -56,7 +58,7 @@
   border-radius: 50%;
   border: 4px solid #eb4a4c;
   font-size: large;
-  margin-top: 50px;
+  margin-top: 100px;
   box-shadow: 0 0 100px #eb4a4c;
 }
 .tom {
@@ -111,6 +113,7 @@
     color: white;
     max-height: 50%;
     position: relative;
+ 
   }
   .profile {
     display: none;

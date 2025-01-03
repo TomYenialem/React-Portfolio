@@ -1,21 +1,17 @@
 import logo from "./logo.jpg";
 
 import react from "./react.png";
-import js from "./js.png";
-import link from "./link.png";
-import head from "./head.jpg";
-import head2 from "./head2.jpg";
 
-import netflix from "./nett.png";
-import ul from "./mm.jpeg";
-import snake from "./snake.jpeg";
-import snake2 from "./snake2.webp";
+
+import netflix from "./net.png";
+
+
 
 import node from './programing.png'
-import react2 from './physics.png'
+
 import mysql from './mysql.png'
 import firebase from './fire.png'
-import js2 from './js-file.png'
+
 import css3 from './css.png'
 import amazone from './amazon.jpeg'
 import qa from './qaa.jpeg'
@@ -23,68 +19,71 @@ import gemini2 from './ai.jpeg'
 import chat from './chat.jpg'
 import mongo from './mngo.jpeg'
 import furn from './furn.jpeg'
+import soket from './sokett.png'
+
 
 const image = {
   logo,
-
   react,
-  js,
-  head,
-  head2,
-  ul,
+
 };
 
 export const project = [
   {
     image: netflix,
-    type: "js",
+    type: "react",
     id: 1,
-    name: " Netflix clone",
+    name: "Netflix clone",
     made: {
-      one: react2,
+      one: react,
       two: css3,
     },
-    link: link,
+ 
     address: "https://cosmic-lolly-netfix.netlify.app/",
+    address2: "https://github.com/TomYenialem/Netflix-clone",
   },
 
   {
     image: qa,
-    type: "js",
+    type: "Full-stack",
     id: 2,
     name: "Question & Answer Platform",
     made: {
-      one: react2,
+      one: react,
       two: node,
       three: mysql,
     },
-    link: link,
+
     address: "https://nokiasnakegames.netlify.app/",
+    address2: "https://github.com/TomYenialem/Q-A-platform",
   },
   {
     image: gemini2,
-    type: "react",
+    type: "js",
     id: 4,
     name: "Gemini-clone",
     made: {
       one: react,
       two: css3,
     },
-    link: link,
+   
     address: "https://my-echo.netlify.app/",
   },
   {
     image: chat,
-    type: "Js",
+    type: "Full-stack",
     id: 3,
-    name: "Electronics-Ecommercie",
+    name: "real-time chat app",
     made: {
       one: node,
       two: react,
       three: mongo,
+      four: soket,
     },
-    link: link,
-    address: "https://electronicsshoopp.netlify.app/",
+   
+
+    // address: "https://electronicsshoopp.netlify.app/",
+    address2: "https://github.com/TomYenialem/real-time-chat-app",
   },
   {
     image: amazone,
@@ -92,25 +91,27 @@ export const project = [
     id: 5,
     name: "Amazone clone",
     made: {
-      one: react2,
+      one: react,
       two: firebase,
-      three: css3,
+      three: node,
     },
-    link: link,
+  
     address: "https://amazon-jalebi-e6dd11.netlify.app/",
+    address2: "https://github.com/TomYenialem/Amazone-clone",
   },
   {
     image: furn,
-    type: "next",
+    type: "Full-stack",
     id: 6,
-    name: "Utility Blogs",
+    name: "full-stack furniture website",
     made: {
-     
-      two: mysql,
+      one: node,
+      two: firebase,
       three: react,
     },
-    link: link,
-    address: "https://utilityblogs1.netlify.app",
+
+    address: "https://furniturehoemoffice.netlify.app/",
+    address2: "https://github.com/TomYenialem/Furnicher-Website",
   },
 ];
 export default project;

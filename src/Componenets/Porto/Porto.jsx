@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./Porto.css";
 import project from "../../assets/images/assets";
-import { BiLink } from "react-icons/bi";
+import { RiExternalLinkFill } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
 
 export default function Porto() {
   const [filters, setFilter] = useState(project);
   const [activeFilter, setActiveFilter] = useState("all");
   const [isHovered, setIsHovered] = useState(Array(filters.length).fill(false));
+  
  let x=project.forEach((pro) => console.log(pro.made.one))
  
 
@@ -67,11 +69,11 @@ export default function Porto() {
           </div>
           <div
             className={` ${
-              activeFilter === "next" ? "active" : "text-secondary"
+              activeFilter === "Full-stack" ? "active" : "text-secondary"
             }`}
-            onClick={() => handleFilterChange("next")}
+            onClick={() => handleFilterChange("Full-stack")}
           >
-            NextJs
+            Full-stack
           </div>
         </div>
         <div className="container mt-4 " id="porofoili-container">
@@ -94,10 +96,20 @@ export default function Porto() {
                   <div className="link-wrapper">
                     <div className="text-center text-white">{project.name}</div>
                     <div className="text-center fs-3  link-icons">
-                      <p className="mx-auto">
+                      <p className="mx-auto git">
+                        {project.address&&(
+
                         <a href={project.address} target="_blank">
-                          <BiLink />
+                          <RiExternalLinkFill />
                         </a>
+                        )}
+                        {
+                          project.address2 && (
+                        <a href={project.address2} target="_blank">
+                          <FaGithub />
+                        </a> 
+                          )
+                        }
                       </p>
                     </div>
                     <div className="stacks">

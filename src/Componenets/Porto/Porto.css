@@ -57,6 +57,14 @@
 
   opacity: 0;
 }
+.git{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 20px;
+  padding-top: 10px;
+
+}
 @media (max-width: 768px) {
   .project-name-overlay {
     left: 0;
@@ -78,29 +86,17 @@
 .project-list .d-flex {
   flex-wrap: wrap;
 }
-.link-icons {
-  box-shadow: 0px 0px 30px #212121;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: white;
-}
-.link-icons:hover {
-  background-color: black;
-}
-.link-icons a {
-  color: black;
-}
+
+
 .link-icons a:hover {
-  color: white;
+ color: #fe0000;
 }
 .link-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding-top: 10px;
 }
 .stacks {

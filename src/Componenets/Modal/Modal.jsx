@@ -12,21 +12,21 @@ import Test from "../Testimoni/Test";
 export default function Modal() {
   const { deleteModal } = useMyContext();
   return (
-    <div className="  overlay-modal col-sm-12 col-md-12  ">
+    <div className="overlay-modal col-sm-12 col-md-12">
       <div className="container modal-1">
         <div className="modals p-5 text-white">
           <div className="close" onClick={deleteModal}>
             X
           </div>
           <div className="row">
-            <div className="col-md-6 col-lg-4 left-modal mb-5 ">
+            <div className="col-md-6 col-lg-4 left-modal mb-5">
               <div className="mode-image">
                 <img src={modalImg} alt="" />
                 <div className="mt-3">
                   <div className="fs-3">
-                    Temesgen <span className="text-color">Yenialem</span>{" "}
+                    Temesgen <span className="text-color">Yenialem</span>
                   </div>
-                  <div className="">Full stack developer</div>
+                  <div className="">Full Stack Developer</div>
                 </div>
               </div>
 
@@ -53,34 +53,32 @@ export default function Modal() {
                   <span>
                     <FaLocationDot />
                   </span>
-                  Bahirdar,Ethiopia
+                  Bahirdar, Ethiopia
                 </p>
               </div>
             </div>
-            <div className="col-md-6 col-lg-7 modal-container ">
+            <div className="col-md-6 col-lg-7 modal-container">
               <div className="py-4 px-3 right-modal">
                 <h5 className="mb-4">
-                  About <span className="text-color"> Me</span>
+                  About <span className="text-color">Me</span>
                 </h5>
                 <p className="mb-5 text-secondary">
-                  From a young age, I've been fascinated by how things work,
-                  particularly the invisible code that makes the digital world
-                  come alive. <br />
-                  This curiosity led me to the world of web development, where I
-                  discovered a passion for building engaging and user-friendly
-                  experiences. As a full-stack web developer, I'm driven by a
-                  desire to create seamless and impactful digital solutions. My
-                  journey has equipped me with a solid understanding of
-                  front-end technologies like HTML, CSS, and JavaScript,
-                  enabling me to craft intuitive and visually appealing user
-                  interfaces.
-                  <br /> I'm equally comfortable working with back-end
+                  From a young age, I’ve been fascinated by how things work,
+                  especially the invisible code that powers the digital world.
+                  This curiosity led me to web development, where I discovered a
+                  passion for building engaging and user-friendly experiences.
+                  As a full-stack web developer, I’m driven by the desire to
+                  create seamless and impactful digital solutions. My journey
+                  has equipped me with a solid understanding of front-end
+                  technologies like HTML, CSS, and JavaScript, enabling me to
+                  craft intuitive and visually appealing user interfaces.
+                  <br />I am equally comfortable working with back-end
                   technologies, allowing me to build robust and scalable
-                  applications. I'm a passionate and results-oriented individual
-                  who is always eager to learn and stay updated with the latest
-                  industry trends. I believe in the power of collaboration and
-                  am excited to contribute my skills to innovative projects that
-                  make a real difference."
+                  applications. I am passionate and results-oriented, always
+                  eager to learn and stay updated with the latest industry
+                  trends. I believe in the power of collaboration and am excited
+                  to contribute my skills to innovative projects that make a
+                  real difference.
                 </p>
                 <div className="quality">
                   <h5>
@@ -125,7 +123,7 @@ export default function Modal() {
                 </p>
                 <div className="programming-skill">
                   <h5 className="mb-4">
-                    Programming<span className="text-color">Skills</span>
+                    Programming <span className="text-color">Skills</span>
                   </h5>
                   <div className="d-flex justify-content-between text-secondary">
                     <p>HTML</p>
@@ -141,7 +139,7 @@ export default function Modal() {
                     </div>
                   </div>
                   <div className="d-flex justify-content-between text-secondary">
-                    <p>CSS (including Bootstrap, Material UI,taliwind)</p>
+                    <p>CSS (including Bootstrap, Material UI, Tailwind)</p>
                     <div>90%</div>
                   </div>
 
@@ -177,7 +175,6 @@ export default function Modal() {
                     <p>SQL (MySQL, PostgreSQL)</p>
                     <div>85%</div>
                   </div>
-                  
                   <div class="progress" style={{ height: "3px" }}>
                     <div
                       class="progress-bar bg-danger fs-5"
@@ -185,9 +182,9 @@ export default function Modal() {
                     ></div>
                   </div>
                 </div>
-                <div className="language mt-5">
+                <div className="language-proficiency mt-5">
                   <h5 className="mb-4">
-                    Programming<span className="text-color">Skills</span>
+                    Language <span className="text-color">Proficiency</span>
                   </h5>
                   <div className="lang d-flex justify-content-around">
                     <div class="progres">
@@ -195,7 +192,7 @@ export default function Modal() {
                       <div className="text-secondary text-center">English</div>
                     </div>
                     <div class="progres circle">
-                      <div className="text-center my-4 mb-5 pt-3 ">100%</div>
+                      <div className="text-center my-4 mb-5 pt-3">100%</div>
                       <div className="text-secondary mt-5 text-center">
                         Amharic
                       </div>
@@ -213,14 +210,14 @@ export default function Modal() {
                       <div className="text-white">
                         <h6>Evangadi Bootcamp</h6>
                         <div className="text-secondary">
-                          Full stack development
+                          Full Stack Development
                         </div>
                       </div>
                     </div>
                     <div className="d-flex justify-content-around">
-                      <p className="text-secondary"> 2008-2016</p>
+                      <p className="text-secondary">2008-2016</p>
                       <div className="text-white">
-                        <h6>Arbaminch Univeristy</h6>
+                        <h6>Arbaminch University</h6>
                         <div className="text-secondary">
                           Computer Engineering
                         </div>
@@ -229,7 +226,7 @@ export default function Modal() {
                     <div className="d-flex justify-content-around">
                       <p className="text-secondary">2018-2020</p>
                       <div>
-                        <h6>gyms website trainers</h6>
+                        <h6>Gym Website Trainers</h6>
                         <div className="text-secondary">Web Development</div>
                       </div>
                     </div>
@@ -241,31 +238,31 @@ export default function Modal() {
                   </h5>
                   <div className="educat">
                     <div className="d-flex justify-content-around">
-                      <p className="text-secondary"> 2022-now</p>
+                      <p className="text-secondary">2022-now</p>
                       <div className="text-white">
-                        <h6>MSA bussines Group</h6>
-                        <div className="text-secondary">Electrcian</div>
+                        <h6>MSA Business Group</h6>
+                        <div className="text-secondary">Electrician</div>
                       </div>
                     </div>
                     <div className="d-flex justify-content-around">
                       <p className="text-secondary">2021-2022</p>
 
                       <div className="text-white">
-                        <h6>MSA bussines Group</h6>
-                        <div className="text-secondary">SCADA Devloper</div>
+                        <h6>MSA Business Group</h6>
+                        <div className="text-secondary">SCADA Developer</div>
                       </div>
                     </div>
                     <div className="d-flex justify-content-around">
                       <p className="text-secondary">2022-2023</p>
 
                       <div className="text-white">
-                        <h6>TOP bussines Group</h6>
+                        <h6>TOP Business Group</h6>
                         <div className="text-secondary">Web Trainer</div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="testemoinies">
+                <div className="testimonials">
                   <Test />
                 </div>
               </div>

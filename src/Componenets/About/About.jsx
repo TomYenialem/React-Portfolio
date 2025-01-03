@@ -66,9 +66,7 @@ export default function About() {
                 </div>
               </div>
               <div className="text-start mt-4  ">
-                <button className="btn btn-outline-dark shadow text-white mx-3">
-                  Download Cv
-                </button>
+              
                 <button
                   onClick={handleModal}
                   className="btn bt text-white me-5"

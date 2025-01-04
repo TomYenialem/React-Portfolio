@@ -1,25 +1,25 @@
-import logo from "./logo.jpg";
+import logo from '../../assets/images/logo.jpg';
 
-import react from "./react.png";
-
-
-import netflix from "./nett.webp";
+import react from "../../assets/images/react.png";
 
 
+import netflix from "../../assets/images/nett.webp";
 
-import node from './programing.png'
 
-import mysql from './mysql.png'
-import firebase from './fire.png'
 
-import css3 from './css.png'
-import amazone from './amazon.jpeg'
-import qa from './qaa.jpeg'
-import gemini2 from './ai.jpeg'
-import chat from './chat.jpg'
-import mongo from './mngo.jpeg'
-import furn from './furn.jpeg'
-import soket from './sokett.png'
+import node from '../../assets/images/programing.png'
+
+import mysql from '../../assets/images/mysql.png'
+import firebase from '../../assets/images/fire.png'
+
+import css3 from '../../assets/images/css.png'
+import amazone from '../../assets/images/amazon.jpeg'
+import qa from '../../assets/images/qaa.jpeg'
+import gemini2 from '../../assets/images/ai.jpeg'
+import chat from '../../assets/images/chat.jpg'
+import mongo from '../../assets/images/mngo.jpeg'
+import furn from '../../assets/images/furn.jpeg'
+import soket from '../../assets/images/sokett.png'
 
 
 const image = {

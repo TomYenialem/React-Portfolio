@@ -12,7 +12,6 @@
   height: 12vh;
   background-color: #18181b; 
   
-  
 
 }
 
@@ -151,7 +150,8 @@
   background-color: red;
 }
 .nav-link {
-  margin-bottom: 10px;
+  padding-top: 15px;
+  /* margin-bottom: 10px; */
 }
 #collapsibleNavbar{
   position: sticky;
@@ -171,57 +171,4 @@
 }
 
 
-/* Improved slide-up and slide-down transitions */
 
-.navbar-collapse {
-  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-}
-
-.navbar-collapse.show {
-  height: auto;
-  opacity: 1;
-}
-
-/* Animation for slide-up */
-@keyframes slideUp {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Animation for slide-down (reverse of slideUp) */
-@keyframes slideDown {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-}
-
-/* Apply slideUp animation on collapse show */
-.navbar-collapse.show {
-  animation: slideUp 0.3s ease-in-out;
-}
-
-/* Apply slideDown animation on collapse hide */
-.navbar-collapse.collapsing {
-  animation: slideDown 0.3s ease-in-out;
-}
-
-/* Media query for smaller screens (improves transition on mobile) */
-@media (max-width: 767px) {
-  .navbar-collapse {
-    transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  }
-}

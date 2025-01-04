@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Porto.css";
-import project from "../../assets/images/assets";
+import project from "../utility/assets";
 import { RiExternalLinkFill } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 

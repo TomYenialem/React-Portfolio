@@ -58,6 +58,34 @@ export default function Skill() {
             <div className="col-md">
               <div className="text-center skill">
                 <div className="logos">
+                  <IoLogoHtml5 />
+                </div>
+                <h4>HTML</h4>
+              </div>
+            </div>
+            <div className="col-md">
+              <div className="text-center skill mt-4 mb-4 mt-md-0 mb-md-0">
+                <div className="logos">
+                  <FaCss3 />
+                </div>
+                <h4>CSS</h4>
+              </div>
+            </div>
+
+            <div className="col-md">
+              <div className="text-center skill mt-4 mb-4 mb-md-0 mt-md-0">
+                <div className="logos">
+                  <FaBootstrap />
+                </div>
+                <h4>Bootstrap</h4>
+              </div>
+            </div>
+          </div>
+
+          <div className="row left-skill mb-5">
+            <div className="col-md">
+              <div className="text-center skill">
+                <div className="logos">
                   <IoLogoJavascript />
                 </div>
                 <h4>JS</h4>

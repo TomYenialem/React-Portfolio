@@ -63,22 +63,35 @@ export default function Modal() {
                   About <span className="text-color">Me</span>
                 </h5>
                 <p className="mb-5 text-secondary">
-                  From a young age, I’ve been fascinated by how things work,
-                  especially the invisible code that powers the digital world.
-                  This curiosity led me to web development, where I discovered a
-                  passion for building engaging and user-friendly experiences.
-                  As a full-stack web developer, I’m driven by the desire to
-                  create seamless and impactful digital solutions. My journey
-                  has equipped me with a solid understanding of front-end
-                  technologies like HTML, CSS, and JavaScript, enabling me to
-                  craft intuitive and visually appealing user interfaces.
-                  <br />I am equally comfortable working with back-end
-                  technologies, allowing me to build robust and scalable
-                  applications. I am passionate and results-oriented, always
-                  eager to learn and stay updated with the latest industry
-                  trends. I believe in the power of collaboration and am excited
-                  to contribute my skills to innovative projects that make a
-                  real difference.
+                  <p>
+                    From a young age, I’ve been captivated by the intricate
+                    systems that power the digital world. This curiosity led me
+                    to web development, where I found my passion for crafting
+                    dynamic, user-friendly digital experiences. As a{" "}
+                    <strong>full-stack web developer</strong>, I specialize in
+                    building seamless, efficient, and scalable applications.
+                  </p>
+
+                  <p>
+                    My expertise spans <strong>front-end technologies</strong>{" "}
+                    like <strong>HTML</strong>, <strong>CSS</strong>, and{" "}
+                    <strong>JavaScript</strong>, allowing me to create
+                    responsive, visually engaging user interfaces. I am equally
+                    proficient in <strong>back-end development</strong>, with
+                    hands-on experience in technologies such as{" "}
+                    <strong>Node.js</strong>, <strong>Express</strong>,{" "}
+                    <strong>Databases (SQL/NoSQL)</strong>, and{" "}
+                    <strong>API development</strong>, enabling me to design
+                    robust, data-driven solutions.
+                  </p>
+
+                  <p>
+                    I am passionate about continuous learning and thrive in
+                    fast-paced, collaborative environments. Driven by results
+                    and a commitment to staying ahead of industry trends, I am
+                    excited to apply my skills to projects that push the
+                    boundaries of innovation and make a tangible impact.
+                  </p>
                 </p>
                 <div className="quality">
                   <h5>
@@ -94,7 +107,7 @@ export default function Modal() {
                     <span className="text-color">
                       <GoTriangleRight />
                     </span>
-                    Web Application Development
+                    Full-stack Web App Development
                   </p>
                   <p className="text-secondary">
                     <span className="text-color">
@@ -113,7 +126,7 @@ export default function Modal() {
                   <span className="text-color">
                     <GoTriangleRight />
                   </span>
-                  Database Design & Management (SQL, NoSQL)
+                  Database Design & Management (SQL, NoSQL,monngoos)
                 </p>
                 <p className="text-secondary">
                   <span className="text-color">
@@ -125,80 +138,52 @@ export default function Modal() {
                   <h5 className="mb-4">
                     Programming <span className="text-color">Skills</span>
                   </h5>
-                  <div className="d-flex justify-content-between text-secondary">
-                    <p>HTML</p>
-                    <div>95%</div>
-                  </div>
-
-                  <div class="progress" style={{ height: "3px" }}>
-                    <div
-                      class="progress-bar bg-danger fs-5"
-                      style={{ width: "95%" }}
-                    >
-                      <span></span>
-                    </div>
-                  </div>
-                  <div className="d-flex justify-content-between text-secondary">
-                    <p>CSS (including Bootstrap, Material UI, Tailwind)</p>
-                    <div>90%</div>
-                  </div>
-
-                  <div class="progress" style={{ height: "3px" }}>
-                    <div
-                      class="progress-bar bg-danger fs-5"
-                      style={{ width: "90%" }}
-                    ></div>
-                  </div>
-                  <div className="d-flex justify-content-between text-secondary">
-                    <p>JavaScript (including React.js)</p>
-                    <div>90%</div>
-                  </div>
-
-                  <div class="progress" style={{ height: "3px" }}>
-                    <div
-                      class="progress-bar bg-danger fs-5"
-                      style={{ width: "90%" }}
-                    ></div>
-                  </div>
-                  <div className="d-flex justify-content-between text-secondary">
-                    <p>Node.js (with Express.js)</p>
-                    <div>90%</div>
-                  </div>
-
-                  <div class="progress" style={{ height: "3px" }}>
-                    <div
-                      class="progress-bar bg-danger fs-5"
-                      style={{ width: "90%" }}
-                    ></div>
-                  </div>
-                  <div className="d-flex justify-content-between text-secondary">
-                    <p>SQL (MySQL, PostgreSQL)</p>
-                    <div>85%</div>
-                  </div>
-                  <div class="progress" style={{ height: "3px" }}>
-                    <div
-                      class="progress-bar bg-danger fs-5"
-                      style={{ width: "85%" }}
-                    ></div>
+                  <div className="quality">
+                    <p className="text-secondary">
+                      <span className="text-color">
+                        <GoTriangleRight />
+                      </span>
+                      HTML
+                    </p>
+                    <p className="text-secondary">
+                      <span className="text-color">
+                        <GoTriangleRight />
+                      </span>
+                      CSS (including Bootstrap, Material UI, Tailwind)
+                    </p>
+                    <p className="text-secondary">
+                      <span className="text-color">
+                        <GoTriangleRight />
+                      </span>
+                      JavaScript (including React.js,Next.js)
+                    </p>
+                    <p className="text-secondary">
+                      <span className="text-color">
+                        <GoTriangleRight />
+                      </span>
+                      Node.js (with Express.js)
+                    </p>
+                    <p className="text-secondary">
+                      <span className="text-color">
+                        <GoTriangleRight />
+                      </span>
+                      SQL (MySQL, PostgreSQL)
+                    </p>
+                    <p className="text-secondary">
+                      <span className="text-color">
+                        <GoTriangleRight />
+                      </span>
+                      MongoDB
+                    </p>
+                    <p className="text-secondary">
+                      <span className="text-color">
+                        <GoTriangleRight />
+                      </span>
+                      Git (Version Control)
+                    </p>
                   </div>
                 </div>
-                <div className="language-proficiency mt-5">
-                  <h5 className="mb-4">
-                    Language <span className="text-color">Proficiency</span>
-                  </h5>
-                  <div className="lang d-flex justify-content-around">
-                    <div class="progres">
-                      <div className="text-center my-4 mb-5 pt-3">85%</div>
-                      <div className="text-secondary text-center">English</div>
-                    </div>
-                    <div class="progres circle">
-                      <div className="text-center my-4 mb-5 pt-3">100%</div>
-                      <div className="text-secondary mt-5 text-center">
-                        Amharic
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 <div className="education mt-5 text-start">
                   <h5 className="mb-4">
                     Education <span className="text-color">Timeline</span>

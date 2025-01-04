@@ -3,7 +3,7 @@ import logo from "./logo.jpg";
 import react from "./react.png";
 
 
-import netflix from "./net.png";
+import netflix from "./nett.webp";
 
 
 

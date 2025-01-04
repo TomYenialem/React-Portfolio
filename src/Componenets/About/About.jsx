@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import proImg from '../../assets/images/tom33.jpg';
-import './About.css'
-import { useMyContext } from '../Contexts/Context';
-import Modal from '../Modal/Modal';
+import React, { useState } from "react";
+import proImg from "../../assets/images/tom33.jpg";
+import "./About.css";
+import { useMyContext } from "../Contexts/Context";
+import Modal from "../Modal/Modal";
 
 export default function About() {
   const { day, open, handleModal } = useMyContext();
- 
+
   return (
     <div className="aboutt mt-5" id="About">
       <div className="text-center pt-3">
@@ -31,16 +31,19 @@ export default function About() {
             </div>
             <div>
               <h1 className="text-white fs-2 headers">
-                I'm Temesgen Yenialem, Front end <br />
-                developer and Web Designer
+                Temesgen Yenialem - Front-End Architect & Creative Problem
+                Solver
               </h1>
               <p className="text-secondary mt-4 para">
-                I'm a full-stack developer with a strong foundation in both
-                front-end and back-end technologies. I thrive on challenges,
-                constantly learning and exploring new ways to push the
-                boundaries of what's possible. I believe in the power of
-                technology to connect people and create positive change, and I'm
-                excited to contribute my skills to meaningful projects.
+                I'm a passionate full-stack developer driven by a lifelong
+                fascination with technology. My journey began with a deep dive
+                into front-end technologies, and I've since expanded my
+                expertise to encompass back-end development. I thrive in
+                collaborative environments, where I can leverage my
+                problem-solving skills and creativity to build innovative and
+                user-centric web applications. I am eager to contribute my
+                skills to a dynamic team and contribute to projects that make a
+                real difference.
               </p>
               <hr className="text-secondary mt-4" />
               <div className="row">
@@ -66,7 +69,6 @@ export default function About() {
                 </div>
               </div>
               <div className="text-start mt-4  ">
-              
                 <button
                   onClick={handleModal}
                   className="btn bt text-white me-5"

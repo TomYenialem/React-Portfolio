@@ -19,7 +19,7 @@ function First() {
 
     const handleTyping = () => {
       if (!isDeleting && displayedText === currentWord) {
-        setTimeout(() => setIsDeleting(true), 1000); // Pause before deleting
+        setTimeout(() => setIsDeleting(true), 100); // Pause before deleting
       } else if (isDeleting && displayedText === "") {
         setIsDeleting(false);
         setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);

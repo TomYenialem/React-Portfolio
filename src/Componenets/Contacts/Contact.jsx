@@ -127,7 +127,11 @@ export default function Contact() {
                 className="btn mt-3 bt text-white message_btn"
                 onClick={handleSubmit}
               >
-                {loading ? <PulseLoader size={10} color="white" /> : "Message Me"}
+                {loading ? (
+                  <PulseLoader size={10} color="white" />
+                ) : (
+                  "Message Me"
+                )}
               </button>
             </div>
             <Toaster position="top-right" />
@@ -136,8 +140,8 @@ export default function Contact() {
           <div className="col-md-4">
             <h2 className="text-white">Contact info</h2>
             <div className="text-secondary">
-              Always available for freelance work if the right project comes
-              along. Feel free to contact me!
+              Always available for work if the right project comes
+              along. Feel free to reach out to me!
             </div>
             <div className="row mt-4">
               <div className="lef col-2">
@@ -164,7 +168,7 @@ export default function Contact() {
                   </div>
                   <div className="text-white">
                     <h5>Location</h5>
-                    <div className="text-secondary">Bahirdar, Ethiopia</div>
+                    <div className="text-secondary">Addis Abeba, Ethiopia</div>
                   </div>
                   <div className="text-white">
                     <h5>Call Me</h5>

@@ -15,10 +15,16 @@
 }
 
 .skill:hover {
-  border: 1px solid #fe0000;
+  /* border: 1px solid #fe0000; */
   transition: 0.4s ease;
+  transform: translateY(-5px); 
+  box-shadow: 0px 10px 25px #fe0000; 
 }
 
+.skill h4{
+
+  font-size: 21px;
+}
 .skill:hover h4 {
   color: white;
 }

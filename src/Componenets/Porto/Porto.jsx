@@ -8,8 +8,7 @@ export default function Porto() {
   const [filters, setFilter] = useState(project);
   const [activeFilter, setActiveFilter] = useState("all");
   const [isHovered, setIsHovered] = useState(Array(filters.length).fill(false));
-  
- let x=project.forEach((pro) => console.log(pro.made.one))
+
  
 
   const handleFilterChange = (filterName) => {

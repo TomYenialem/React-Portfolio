@@ -11,7 +11,7 @@ import { IoMdClose } from "react-icons/io";
 
 export default function Header() {
   const { day, handleToggle } = useMyContext();
-const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu visibility
 
   // Handle toggle when the menu icon is clicked
   const toggleMenu = () => {
@@ -29,11 +29,11 @@ const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu visibilit
           <div className="container ">
             <div className="">
               <a className="navbar-brand text-white" href="#">
-                <img src={logo} className="logo"/>
+                <img src={logo} className="logo" />
               </a>
             </div>
 
-           {/* Toggle Button */}
+            {/* Toggle Button */}
             <div
               className="navbar-toggler p-0"
               type="button"
@@ -50,11 +50,10 @@ const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu visibilit
 
             {/* Use the state to control the collapse behavior */}
             <div
-              className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}  // Add 'show' class if menu is open
+              className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`} // Add 'show' class if menu is open
               id="collapsibleNavbar"
             >
               <ul className="navbar-nav m-auto w-100 d-flex justify-content-end">
-           
                 <li className="nav-item">
                   <a
                     className="nav-link text-danger text-hover-danger px-4 mb-2"
@@ -124,8 +123,10 @@ const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu visibilit
           <a href="#Contact">
             <button className="btn ">Contact Me</button>
           </a>
-          <a href="#Contact">
-            <button className="btn resume">Download cv</button>
+          <a href="" >
+            <button className="btn resume"  style={{cursor:'not-allowed'}}>
+              Download cv
+            </button>
           </a>
         </div>
       </div>
@@ -140,6 +141,3 @@ const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu visibilit
     </div>
   );
 }
-
-
-

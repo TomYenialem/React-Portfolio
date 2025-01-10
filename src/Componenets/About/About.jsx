@@ -64,7 +64,7 @@ export default function About() {
                   </p>
                   <p className="text-white">
                     From:{" "}
-                    <span className="text-secondary">Bahirdar,Ethiopia</span>
+                    <span className="text-secondary">Addis Ababa,Ethiopia</span>
                   </p>
                 </div>
               </div>

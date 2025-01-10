@@ -71,7 +71,19 @@
   .project-name-overlay {
     left: 0;
     top: 0;
+      background-color: rgba(0, 0, 0, .7);
   }
+ .project-name-overlay {
+  opacity: 1;
+  cursor: pointer;
+   text-align: center;
+left: 0;
+  top: 0;
+}
+.portofoilio.hovered .project-name-overlay {
+ transform:scale(1.04);
+  background-color: rgba(0, 0, 0, 1);
+}
 }
 .portofoilio img {
   box-shadow: 3px 10px 10px #413f3f;

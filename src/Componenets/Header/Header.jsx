@@ -9,6 +9,7 @@ import { useMyContext } from "../Contexts/Context";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
+
 export default function Header() {
   const { day, handleToggle } = useMyContext();
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu visibility
@@ -27,7 +28,7 @@ export default function Header() {
       <div className="header_wrapper fixed-top">
         <nav className="navbar navbar-expand-md text-white  p-0  ">
           <div className="container ">
-            <div className="">
+            <div className="logo-container">
               <a className="navbar-brand text-white" href="#">
                 <img src={logo} className="logo" />
               </a>
@@ -123,8 +124,8 @@ export default function Header() {
           <a href="#Contact">
             <button className="btn ">Contact Me</button>
           </a>
-          <a href="" >
-            <button className="btn resume"  style={{cursor:'not-allowed'}}>
+          <a href="/public/Myresume.pdf" download>
+            <button className="btn resume">
               Download cv
             </button>
           </a>

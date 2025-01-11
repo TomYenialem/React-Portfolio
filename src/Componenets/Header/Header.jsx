@@ -9,7 +9,6 @@ import { useMyContext } from "../Contexts/Context";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
-
 export default function Header() {
   const { day, handleToggle } = useMyContext();
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu visibility
@@ -124,10 +123,8 @@ export default function Header() {
           <a href="#Contact">
             <button className="btn ">Contact Me</button>
           </a>
-          <a href="/public/Myresume.pdf" download>
-            <button className="btn resume">
-              Download cv
-            </button>
+          <a href="/Myresume.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="btn resume">View Resume</button>
           </a>
         </div>
       </div>

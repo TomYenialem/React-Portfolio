@@ -38,7 +38,7 @@
 .recent {
   border-bottom: 4px solid #fe0000;
 
-  width: 100px;
+  width: 150px;
 }
 .portofoilio {
   position: relative;
@@ -194,4 +194,89 @@ left: 0;
   transform: scale(1.1); 
   background-color: #fe0000;
   color: white; 
+}
+.pro_details{
+
+  color: white;
+}
+
+/* Card and Project Padding */
+.card {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.pro_details {
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* Project Image Styling */
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+ 
+}
+
+.project-image:last-child {
+  transform: scale(1.08);
+}
+.project-image:hover{
+  transform: scale(1.07);
+}
+
+/* Technologies - Underlined Text */
+.tech-item {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #ddd;
+  transition: color 0.3s ease;
+  margin-right: 10px;
+}
+
+.tech-item:hover {
+  color: #fff;
+}
+
+/* Buttons with Hover Effects */
+.project-btn,
+.project-btn-outline {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.project-btn-outline {
+  background: transparent;
+  border: 2px solid;
+  color: inherit;
+}
+
+.project-btn {
+  background-color: inherit;
+  color: #fff;
+}
+
+.project-btn .me-2, .project-btn-outline .me-2 {
+  transition: transform 0.3s ease;
+}
+
+.project-btn:hover .me-2, .project-btn-outline:hover .me-2 {
+  transform: translateX(5px);
+}
+
+.pro_details{
+  line-height: 1.8!important;
+}
+.detail_info{
+  margin-top: 70px;
+ 
+}
+.full_cot{
+margin-top: 70px;
 }

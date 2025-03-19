@@ -18,6 +18,8 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // add function
+
   // Handle closing the menu when a link is clicked
   const handleLinkClick = () => {
     setIsMenuOpen(false); // Close the menu
@@ -123,7 +125,7 @@ export default function Header() {
           <a href="#Contact">
             <button className="btn ">Contact Me</button>
           </a>
-          <a href="/Myresume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/localResume.pdf" target="_blank" rel="noopener noreferrer">
             <button className="btn resume">View Resume</button>
           </a>
         </div>

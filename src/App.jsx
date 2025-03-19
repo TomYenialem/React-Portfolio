@@ -2,7 +2,8 @@ import "./App.css";
 import About from "./Componenets/About/About";
 import Contact from "./Componenets/Contacts/Contact";
 import Header from "./Componenets/Header/Header";
-import Porto from "./Componenets/Porto/Porto";
+// import Porto from "./Componenets/Porto/Porto";
+import Projects from "./Componenets/Porto/Projects";
 import Services from "./Componenets/Services/Services";
 import Skill from "./Componenets/Skills/Skill";
 import { motion, useInView } from "framer-motion";
@@ -39,7 +40,8 @@ function App() {
         <About />
       </SectionWrapper>
       <SectionWrapper>
-        <Porto />
+        {/* <Porto /> */}
+      <Projects/>
       </SectionWrapper>
       <SectionWrapper>
         <Services />

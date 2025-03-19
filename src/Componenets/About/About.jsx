@@ -31,7 +31,7 @@ export default function About() {
             </div>
             <div>
               <h1 className="text-white fs-2 headers">
-                Temesgen Yenialem - Front-End Architect & Creative Problem
+                Temesgen Yenialem - Full Stack Web Developer & Creative Problem
                 Solver
               </h1>
               <p className="text-secondary mt-4 para">

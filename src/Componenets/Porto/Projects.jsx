@@ -1,16 +1,29 @@
 import React, { useState } from "react";
 import "./Porto.css";
 import { FaLink, FaGithub } from "react-icons/fa";
-import abe from "../../assets/images/customers.png";
+import abe from "../../assets/images/car4.png";
 import chat from "../../assets/images/chat2.png";
-import auth from "../../assets/images/portof.png";
-import home from "../../assets/images/home.png";
+import auth from "../../assets/images/auth1.png";
+import home from "../../assets/images/furn2.png";
+import dash from '../../assets/images/dash4.png'
 import { MdExpandMore, MdOutlineExpandLess } from "react-icons/md";
 import projectList from "../utility/assets";
 import { RiExternalLinkFill } from "react-icons/ri";
-import { Sparkles } from "lucide-react";
+
 
 const projects = [
+  {
+    title: "Hospital Admin Dashboard",
+    description:
+      "A comprehensive admin dashboard for managing hospital operations, including patient, staff, and resource management. Built using MySQL, TailwindCSS, Node.js, and React.",
+    media: dash,
+    type: "image",
+    link: "https://prodigy-fwd-02-5.onrender.com",
+    github: "https://github.com/TomYenialem/PRODIGY_FWD_02.git",
+    technologies: ["MySQL", "TailwindCSS", "Node.js", "React"],
+    buttonColor: "green",
+  },
+
   {
     title: "Real-Time Chat App",
     description:
@@ -20,7 +33,7 @@ const projects = [
     link: "https://prodigy-fwd-04-1.onrender.com",
     github: "https://github.com/TomYenialem/PRODIGY_FWD_04.git",
     technologies: ["Socket.io", "Node.js", "React", "MongoDB", "Express.js"],
-    buttonColor: "red",
+    buttonColor: "#08194A",
   },
   {
     title: "Authorization and Authentication",
@@ -40,17 +53,26 @@ const projects = [
     ],
     buttonColor: "#FFD230 ",
   },
+
   {
-    title: "Admin Dashboard",
+    title: "Smart Garage Management System",
     description:
-      "A dashboard for managing employees, sales, and customers with full CRUD functionality.",
+      "A feature-rich garage management system for vehicle service tracking, customer interactions, and inventory management.",
     media: abe,
     type: "image",
     link: "https://mygaragehub.onrender.com",
     github: "https://github.com/TomYenialem/GarageHub.git",
-    technologies: ["React", "Node.js", "Express.js", "MySQL", ""],
-    buttonColor: "#08194A",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Sequelize",
+      "JWT Authentication",
+    ],
+    buttonColor: "#EE0D09",
   },
+
   {
     title: "E-commerce Platform",
     description:

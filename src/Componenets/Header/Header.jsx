@@ -125,7 +125,7 @@ export default function Header() {
           <a href="#Contact">
             <button className="btn ">Contact Me</button>
           </a>
-          <a href="/localResume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/local resume.pdf" target="_blank" rel="noopener noreferrer">
             <button className="btn resume">View Resume</button>
           </a>
         </div>

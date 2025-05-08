@@ -79,8 +79,8 @@ const projects = [
       "A real-time facial expression detection application built with TensorFlow.js and React. Analyzes emotions, age, and gender from webcam feeds with high accuracy.",
     media: face,
     type: "image",
-    link: "https://your-facial-recognition-app.demo",
-    github: "https://github.com/your-username/webcam-facial-recognition.git",
+    link: "https://facerecoginzation.netlify.app/",
+    github: "https://github.com/TomYenialem/webcam-facial-recognition.git",
     technologies: [
       "React 19",
       "TypeScript",

@@ -6,6 +6,7 @@ import chat from "../../assets/images/chat2.png";
 import auth from "../../assets/images/auth1.png";
 import home from "../../assets/images/furn2.png";
 import dash from '../../assets/images/dash4.png'
+import face from '../../assets/images/face.png'
 import { MdExpandMore, MdOutlineExpandLess } from "react-icons/md";
 import projectList from "../utility/assets";
 import { RiExternalLinkFill } from "react-icons/ri";
@@ -71,6 +72,24 @@ const projects = [
       "JWT Authentication",
     ],
     buttonColor: "#EE0D09",
+  },
+  {
+    title: "Smart Facial Recognition App",
+    description:
+      "A real-time facial expression detection application built with TensorFlow.js and React. Analyzes emotions, age, and gender from webcam feeds with high accuracy.",
+    media: face,
+    type: "image",
+    link: "https://your-facial-recognition-app.demo",
+    github: "https://github.com/your-username/webcam-facial-recognition.git",
+    technologies: [
+      "React 19",
+      "TypeScript",
+      "TensorFlow.js",
+      "face-api.js",
+      "Redux Toolkit",
+      "Bootstrap 5",
+    ],
+    buttonColor: "linear-gradient(to right, #48bb78, #3b82f6, #9333ea)",
   },
 
   {
@@ -167,7 +186,11 @@ function Projects() {
                     rel="noopener noreferrer"
                     className="btn project-btn"
                     style={{
-                      backgroundColor: project.buttonColor,
+                      background:
+                        typeof project.buttonColor === "string" &&
+                        project.buttonColor.includes("gradient")
+                          ? project.buttonColor
+                          : project.buttonColor,
                       color: "#fff",
                     }}
                   >
@@ -179,8 +202,17 @@ function Projects() {
                     rel="noopener noreferrer"
                     className="btn ms-2 project-btn-outline"
                     style={{
-                      border: `2px solid ${project.buttonColor}`,
+                      border: `2px solid ${
+                        typeof project.buttonColor === "string" &&
+                        project.buttonColor.includes("gradient")
+                          ? project.buttonColor
+                          : project.buttonColor
+                      }`,
                       color: "#fff",
+                      background: "transparent",
+                      position: "relative",
+                      overflow: "hidden",
+                      zIndex: 1,
                     }}
                   >
                     <FaGithub className="me-2" /> GitHub
